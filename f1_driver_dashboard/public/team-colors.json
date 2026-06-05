@@ -1,0 +1,13 @@
+{
+  "red_bull": "#3671C6",
+  "mercedes": "#27F4D2",
+  "ferrari": "#E8002D",
+  "mclaren": "#FF8000",
+  "aston_martin": "#229971",
+  "alpine": "#FF87BC",
+  "williams": "#64C4FF",
+  "alphatauri": "#5E8FAA",
+  "alfa": "#C92D4B",
+  "haas": "#B6BABD",
+  "unknown": "#AAAAAA"
+}

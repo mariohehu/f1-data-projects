@@ -1,0 +1,46 @@
+# ── planning docs (kept local, not part of the public repo) ──
+INSTRUCTIONS.md
+idea-template.md
+f1_0*.md
+f1_project_plans.html
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ── FastF1 cache (large, regenerated on first run) ──
+**/data/raw/
+**/data/cache/
+
+# ── trained models (regenerated via train.py) ──
+**/models/*.pkl
+
+# ── generated outputs ──
+**/output/charts/
+**/output/*.csv
+
+# ── Node / Next.js ──
+**/node_modules/
+**/.next/
+**/out/
+**/.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# ── env / secrets ──
+.env
+.env.local
+**/.env
+
+# ── OS / editor ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── local tooling ──
+.claude/
