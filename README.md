@@ -21,6 +21,9 @@ Finds which teams "hide" pace in qualifying vs. the race via a `hidden_pace` met
 ### 5. [Race Analyst Agent](f1_analyst_agent/) — `Python · FastAPI · Ollama · Next.js`
 A tool-calling AI agent that answers F1 questions using **real timing data** — no hallucinated numbers. Runs on a local Ollama model (free, no API key), with 5 data tools, fuzzy race/driver resolution, and a chat UI with session memory.
 
+### 6. [Live Car Tracker](f1_live_tracker/) — `Python · FastAPI · WebSocket · Next.js`
+Real-time visualisation of car positions on an SVG circuit map, from live OpenF1 telemetry. Replay mode with play/pause/speed/scrubber, race-phase overlays (SC/VSC/red flag), and a single OpenF1-derived coordinate transform so cars always land on track.
+
 ---
 
 ## Why these projects
@@ -34,6 +37,7 @@ Each one targets a different skill:
 | 3 | Full-stack web dev, API design, data viz, caching/rate-limiting |
 | 4 | Statistical analysis, normalisation across heterogeneous conditions, CLI tooling |
 | 5 | LLM agents, tool calling, RAG-style grounding, local model orchestration |
+| 6 | Real-time systems, WebSockets, coordinate geometry, streaming data viz |
 
 ## Running them
 
@@ -43,9 +47,10 @@ Each project has its own README with setup instructions. Python projects need `p
 
 ## Tech stack
 
-`Python 3` · `XGBoost` · `scikit-learn` · `pandas` · `Streamlit` · `Plotly` · `seaborn` · `FastAPI` · `Ollama` · `Next.js 14` · `TypeScript` · `Recharts` · `FastF1` · `Jolpica API`
+`Python 3` · `XGBoost` · `scikit-learn` · `pandas` · `Streamlit` · `Plotly` · `seaborn` · `FastAPI` · `WebSocket` · `Ollama` · `Next.js 14` · `TypeScript` · `Recharts` · `FastF1` · `Jolpica API` · `OpenF1`
 
 ## Data sources
 
 - **[FastF1](https://github.com/theOehrly/Fast-F1)** — official F1 timing, telemetry, and weather data
 - **[Jolpica API](https://github.com/jolpica/jolpica-f1)** — drop-in successor to the Ergast API (which shut down in late 2024)
+- **[OpenF1](https://openf1.org)** — free, unauthenticated live timing & car-location API (2023+)
